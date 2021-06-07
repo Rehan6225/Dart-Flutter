@@ -24,9 +24,9 @@ class MyApp extends StatelessWidget{/*Pascals case;class name; inheritance is us
           //body:Text('This is my default text'),
           body:Column(children:[
             Text('The question!'),
-            ElevatedButton(child:Text('Answer 1'),onPressed:questionAnswer),//here button is clicked and void function is called as onPressed takes void funcyion
-            ElevatedButton(child:Text('Answer 1'),onPressed:questionAnswer),
-            ElevatedButton(child:Text('Answer 1'),onPressed:questionAnswer),
+            ElevatedButton(child:Text('Answer 1'),onPressed:()=>print('Answer1 chosen')),//anonymous function
+            ElevatedButton(child:Text('Answer 1'),onPressed:()=>print('Answer2 chosen')),
+            ElevatedButton(child:Text('Answer 1'),onPressed:questionAnswer),//here button is clicked and void function is called as onPressed takes void function
 
           ],),
         ),
